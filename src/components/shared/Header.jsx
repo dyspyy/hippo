@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react'
 import { Menu, Popover, Transition } from '@headlessui/react'
-import { HiOutlineBell, HiOutlineSearch, HiOutlineChatAlt, BsFillHeartPulseFill } from 'react-icons/hi'
+import { HiOutlineBell, HiOutlineSearch, HiOutlineChatAlt } from 'react-icons/hi'
 import { useNavigate } from 'react-router-dom'
-import { TbBinaryTree } from 'react-icons/tb';
 import classNames from 'classnames'
 
 export default function Header() {

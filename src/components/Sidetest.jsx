@@ -5,10 +5,11 @@ export default function DashboardStatsGrid() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-    { label: 'Риск заболеваний' },
+    { label: 'Образ жизни' },
     { label: 'Питание' },
-    { label: 'Спорт' },
-    { label: 'Эффективность лекарств' },
+    { label: 'Физиология' },
+    { label: 'Лабораторные исследования' },
+    { label: 'Опросники' },
   ];
 
   const handleTabClick = (index) => {
@@ -17,7 +18,7 @@ export default function DashboardStatsGrid() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex mb-4"> {/* Добавлен margin-bottom */}
+      <div className="flex mb-4">
         {tabsData.map((tab, index) => (
           <BoxWrapper
             key={index}
