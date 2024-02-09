@@ -4,7 +4,10 @@ import {
 	HiBookOpen,
 	HiMap,
 	HiOutlineQuestionMarkCircle,
-	HiOutlineCog
+	HiOutlineIdentification,
+	HiClipboardList,
+	HiShieldCheck,
+	HiOutlineDocumentDuplicate
 } from 'react-icons/hi'
 
 
@@ -12,15 +15,33 @@ import {
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
-		label: 'Риск заболеваний',
+		label: 'Риски заболеваний',
 		path: '/',
 		icon: <HiHeart />
 	},
 	{
-		key: 'advices',
-		label: 'Рекомендации',
-		path: '/advices',
-		icon: <HiOutlineBadgeCheck />
+		key: 'diseases',
+		label: 'Мои болезни',
+		path: '/diseases',
+		icon: <HiShieldCheck />
+	},
+	{
+		key: 'investigations',
+		label: 'Исследования',
+		path: '/investigations',
+		icon: <HiOutlineDocumentDuplicate />
+	},
+	{
+		key: 'surveys',
+		label: 'Опросники',
+		path: '/surveys',
+		icon: <HiClipboardList />
+	},
+	{
+		key: 'accounts',
+		label: 'Учётные записи',
+		path: '/accounts',
+		icon: <HiOutlineIdentification />
 	},
 
 ]

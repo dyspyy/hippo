@@ -12,8 +12,8 @@ const Sidebar = ({ avatar, firstName, lastName, aboutMeLink }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className="w-60 p-3 flex flex-col">
-      <div className="flex items-center gap-2 px-2 py-3 bg-white shadow-lg rounded-lg text-black">
+    <div className="w-50 p-3 flex flex-col mt-[-92px] h-screen">
+      <div className="h-20 flex items-center gap-2 px-2 py-3 bg-white shadow-lg rounded-lg text-black">
         <HiUserCircle className="text-black text-6xl"/>
         <div>
           <p>Иван Иванов</p>
@@ -22,7 +22,7 @@ const Sidebar = ({ avatar, firstName, lastName, aboutMeLink }) => {
           </Link>
         </div>
       </div>
-      <div className="py-6 flex flex-1 flex-col gap-1.5">
+      <div className="py-8 flex flex-1 flex-col gap-1.5 ">
         {DASHBOARD_SIDEBAR_LINKS.map((link) => (
           <SidebarLink key={link.key} link={link} />
         ))}
