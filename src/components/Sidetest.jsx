@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import DataHealth from './DataHealth';
 import DataNutrition from './DataNutrition';
+import DataPhysiology from './DataPhysiology';
+import DataSocialEnv from './DataSocialEnv';
+import DataLifeEvent from './DataLifeEvent';
 
 export default function Sidetest() {
   const [activeTab, setActiveTab] = useState(0);
@@ -37,6 +40,9 @@ export default function Sidetest() {
 
       {activeTab === 0 && <DataHealth />}
       {activeTab === 1 && <DataNutrition />}
+      {activeTab === 2 && <DataPhysiology />}
+      {activeTab === 3 && <DataSocialEnv />}
+      {activeTab === 4 && <DataLifeEvent />}
     </div>
   );
 }

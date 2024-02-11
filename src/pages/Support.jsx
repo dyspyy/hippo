@@ -62,13 +62,13 @@ export default function Support() {
               className="appearance-none bg-transparent border border-gray-300 py-2 px-4 rounded-lg text-gray-600 hover:border-yellow-500 hover:text-yellow-500 focus:outline-none focus:border-yellow-500 focus:text-yellow-500 w-full"
               style={{ position: 'absolute', top: 0, left: 0, opacity: 0, zIndex: 9999 }}
             />
-            <button className="bg-amber-400 text-white py-2 px-4 rounded-lg hover:shadow-lg hover:bg-amber-500 focus:outline-none focus:bg-amber-500 transition-colors duration-300 w-full">
+            <button className="bg-amber-400 text-white py-2 px-4 rounded-lg hover:shadow-lg hover:bg-amber-500 focus:outline-none focus:bg-amber-500 transition-colors duration-300 w-full ">
               Выбрать файл
             </button>
           </div>
         </div>
 
-        <button type="submit" className="mt-6 bg-amber-400 text-lg text-white py-2 px-4 rounded-lg w-full hover:shadow-lg hover:bg-amber-500 focus:outline-none focus:bg-amber-500">
+        <button type="submit" className="mt-6 bg-amber-400 text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500 text-lg text-white py-2 px-4 rounded-lg w-full hover:shadow-lg hover:bg-amber-500 focus:outline-none focus:bg-amber-500">
           Отправить
         </button>
         <p className="text-gray-600 text-sm mt-2 text-center mt-10">Вы также можете отправить нам письмо на почту <a href="mailto:info@dimhealth.ru" className="text-blue-500 underline">info@dimhealth.ru</a>.</p>

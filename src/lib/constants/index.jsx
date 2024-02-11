@@ -21,7 +21,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 	},
 	{
 		key: 'diseases',
-		label: 'Мои болезни',
+		label: 'Мои заболевания',
 		path: '/diseases',
 		icon: <HiShieldCheck />
 	},

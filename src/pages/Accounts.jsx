@@ -12,14 +12,14 @@ export default function Accounts() {
           <p className="text-gray-700 mb-2">
             Нажмите «Подключить» в блоке справа, чтобы подключить Вашу учетную запись.
           </p>
-          <button className="bg-amber-400 text-white py-2 px-4 rounded-lg hover:bg-amber-500">Подключить</button>
+          <button className="bg-amber-400 text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500">Подключить</button>
         </div>
         <div>
           <h2 className="text-xl font-bold mb-2">Учетная запись GoogleFit</h2>
           <p className="text-gray-700 mb-2">
             Подключив Вашу учетную запись GoogleFit вы позволите системе автоматически собирать данные о вашей активности и состоянии здоровья с различных источников, таких как: телефоны, сенсоры, умные часы, фитнес-браслеты, умные весы и прочие гаджеты.
           </p>
-          <button className="bg-amber-400 text-white py-2 px-4 rounded-lg hover:bg-amber-500">Подключить</button>
+          <button className="bg-amber-400 text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500">Подключить</button>
         </div>
       </div>
     </div>
