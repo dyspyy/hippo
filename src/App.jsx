@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/shared/Layout'
 import Dashboard from './pages/Dashboard'
-import Advices from './pages/Investigations'
 import Support from './pages/Support'
 import Profile from './pages/Profile'
 import { Registration } from './pages/Registration'

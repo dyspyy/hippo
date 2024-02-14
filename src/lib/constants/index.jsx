@@ -1,8 +1,5 @@
 import {
 	HiHeart,
-	HiOutlineBadgeCheck,
-	HiBookOpen,
-	HiMap,
 	HiOutlineQuestionMarkCircle,
 	HiOutlineIdentification,
 	HiClipboardList,
