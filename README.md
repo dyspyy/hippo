@@ -1,4 +1,4 @@
-### Сделано:
+# Сделано:
 ---
 **Риски заболеваний >**
 
@@ -15,7 +15,7 @@
 **Помощь и поддержка**
 
 
-### Несделано:
+# Несделано:
 ---
 **Запросы к серверу**
 
@@ -38,6 +38,6 @@
 
 - "Гипотония:" - нет number input'ов при нажатии на второй и третий вариант ([ссылка](https://ai-hippocrates.ru/edit/illnesses))
 
-# **Сайт откуда копируем:** (https://ai-hippocrates.ru/edit/profile)
+## **Сайт откуда копируем:** (https://ai-hippocrates.ru/edit/profile)
 ---
-# **API -** (https://kb.ai-hippocrates.ru/hippo/swagger/index.html)
+## **API -** (https://kb.ai-hippocrates.ru/hippo/swagger/index.html)
