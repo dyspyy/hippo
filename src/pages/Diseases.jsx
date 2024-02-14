@@ -397,9 +397,9 @@ const Diseases = () => {
     </div>
 
 
-<button type="submit" className="text-lg leading-relaxed font-normal bg-amber-400 mb-[-20px] text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500">
-  Сохранить
-</button>
+  <button type="submit" className="text-lg leading-relaxed font-normal bg-amber-400 mb-[-20px] text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500">
+    Сохранить
+  </button>
 
 </div>
 

@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <div className="mt-4 bg-white h-20 bg-white shadow-lg rounded-lg text-black flex items-center p-6 mr-4" style={{ marginLeft: '266px' }}>
-      <h1 className="text-2xl font-bold">{headerText}</h1>
+      <h1 className="text-2xl font-bold text-gray-700">{headerText}</h1>
     </div>
   );
 }

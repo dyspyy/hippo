@@ -49,7 +49,7 @@ export default function Sidetest() {
 
 function BoxWrapper({ children, onClick, isActive }) {
   const baseClasses = 'p-2 pl-4 pr-4 flex-2 border-b-2 border-gray-300 flex items-center cursor-pointer';
-  const activeClasses = 'bg-white text-gray-900 border-b-2 border-amber-300 rounded-t-lg';
+  const activeClasses = 'bg-white text-gray-700 border-b-2 border-amber-300 rounded-t-lg';
 
   return (
     <div

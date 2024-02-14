@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import CheckboxButton from './CheckboxButton';
+import RadioButton from './RadioButton';
 
 export default function Profile() {
   const [weight, setWeight] = useState('');
@@ -43,9 +44,9 @@ export default function Profile() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-4 mt-8">
+    <div className="p-4 pt-[25px] h-screen flex flex-col pt-2 pb-[180px] overflow-y-auto text-gray-700">
       {/* Настройки профиля */}
-      <div className="mb-8">
+      <div className="mb-8 max-w-2xl ml-12">
         <h2 className="text-2xl font-bold mb-4">Данные профиля</h2>
         <form>
           <div className="flex items-center mb-4">
@@ -138,7 +139,7 @@ export default function Profile() {
       </div>
 
       {/* Контакты и безопасность */}
-      <div className='h-screen flex flex-col gap-1 pt-2 overflow-y-auto' >
+      <div className='max-w-2xl ml-12' >
         <h2 className="text-2xl font-bold mb-4">Контакты и безопасность</h2>
         <form>
           <div className="flex items-center mb-4">
