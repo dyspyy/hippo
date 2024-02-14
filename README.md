@@ -39,5 +39,5 @@
 - "Гипотония:" - нет number input'ов при нажатии на второй и третий вариант ([ссылка](https://ai-hippocrates.ru/edit/illnesses))
 
 ## **Сайт откуда копируем:** (https://ai-hippocrates.ru/edit/profile)
----
+
 ## **API -** (https://kb.ai-hippocrates.ru/hippo/swagger/index.html)
