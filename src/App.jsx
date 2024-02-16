@@ -9,7 +9,9 @@ import Accounts from './pages/Accounts'
 import Surveys from './pages/Surveys'
 import Diseases from './pages/Diseases'
 import Investigations from './pages/Investigations'
+import Risks from './components/Risks'
 
+import Neoffi from './pages/pagesS/Neoffi'
 
 function App() {
     return (
@@ -18,11 +20,14 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="profile" element={<Profile />} />
+                    <Route path="risks" element={<Risks />} />
                     <Route path="investigations" element={<Investigations />} />
                     <Route path="diseases" element={<Diseases />} />
                     <Route path="surveys" element={<Surveys />} />
                     <Route path="accounts" element={<Accounts />} />
                     <Route path="support" element={<Support />} />
+
+                    <Route path="/surveys/neoffi" element={<Neoffi />} />
                 </Route>
                 <Route path="/registration" element={<Registration />} />
                 <Route path='/login' element={<Login/>}/>

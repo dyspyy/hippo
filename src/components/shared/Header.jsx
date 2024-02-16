@@ -29,6 +29,9 @@ export default function Header() {
 	case 'diseases':
 	  headerText = 'Болезни и семейный анамнез';
 	  break;
+  case 'neoffi':
+      headerText = 'Личностные черты';
+      break;
     default:
       headerText = 'Риски заболеваний';
   }

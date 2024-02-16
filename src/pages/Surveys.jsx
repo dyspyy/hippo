@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Surveys = () => {
   return (
@@ -9,7 +10,11 @@ const Surveys = () => {
           <p className="text-gray-700 text-sm w-[540px] mb-6 font-normal">
           Личностный опросник (тест «Большая пятерка») — позволяет оценить, насколько у человека выражены следующие черты личности: нейротизм, экстраверсия, готовность к согласию, сознательность и открытость опыту.
           </p>
-          <button className="bg-amber-400 text-sm font-normal text-white py-2 px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500">Приступить к выполнению</button>
+          <Link
+          to="/surveys/neoffi"
+          className="bg-amber-400 text-sm font-normal text-white py-[10px] px-4 rounded-lg duration-700 hover:shadow-lg hover:bg-amber-500 hover:no-underline">
+          Приступить к выполнению
+          </Link>
         </div>
 
         <div className="mb-12">

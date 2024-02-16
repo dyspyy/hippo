@@ -11,9 +11,9 @@ import {
 
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
-		key: 'dashboard',
+		key: 'risks',
 		label: 'Риски заболеваний',
-		path: '/',
+		path: '/risks',
 		icon: <HiHeart />
 	},
 	{

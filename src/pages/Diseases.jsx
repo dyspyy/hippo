@@ -9,6 +9,7 @@ const Diseases = () => {
   const [other, setOther] = useState('never');
   const [otherz, setOtherz] = useState('never');
   const [hypertensiond, setHypertensiond] = useState('never');
+  const [hypotension, setHypotension] = useState('never');
   const [weakness, setWeakness] = useState('never');
   const [fatigue, setFatigue] = useState('never');
   const [neoplasms, setNeoplasms] = useState('never');
@@ -31,6 +32,9 @@ const Diseases = () => {
     setLemia(event.target.value); 
   };
 
+  const handleHypotensionChange = (event) => {
+    setHypotension(event.target.value); 
+  };
   const handleHypertensiondChange = (event) => {
     setHypertensiond(event.target.value); 
   };
@@ -66,19 +70,19 @@ const Diseases = () => {
     {/* Среднее потребление овощей и фруктов в день */}
     <h3 className="text-xl leading-relaxed font-bold text-gray-700 mt-5 mb-2">Мои заболевания</h3>
     <h3 className="font-sans text-sm antialiased font-normal leading-normal text-gray-700 mb-2">Гипертоническая болезнь:</h3>
-    <RadioButton id="hypertensiond1" label="Нет" name="hypertensiond_group" value="1"/>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond2" label="Гипертония 1 стадии латентная" name="hypertensiond_group" value="2" /></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond3" label="Гипертония 1 стадии транзиторная" name="hypertensiond_group" value="3" /></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond4" label="Гипертония 2 стадии лабильная" name="hypertensiond_group" value="4" /></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond5" label="Гипертония 2 стадии стабильная" name="hypertensiond_group" value="5" /></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond6" label="Гипертония 3 стадии" name="hypertensiond_group" value="6" /></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertensiond7" label="Не знаю" name="hypertensiond_group" value="7" /></div>
+    <RadioButton id="hypertensiond1" label="Нет" name="hypertensiond_group" value="1" checked={hypertensiond === '1'} onChange={handleHypertensiondChange}/>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond2" label="Гипертония 1 стадии латентная" name="hypertensiond_group" value="2" checked={hypertensiond === '2'} onChange={handleHypertensiondChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond3" label="Гипертония 1 стадии транзиторная" name="hypertensiond_group" value="3" checked={hypertensiond === '3'} onChange={handleHypertensiondChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond4" label="Гипертония 2 стадии лабильная" name="hypertensiond_group" value="4" checked={hypertensiond === '4'} onChange={handleHypertensiondChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond5" label="Гипертония 2 стадии стабильная" name="hypertensiond_group" value="5" checked={hypertensiond === '5'} onChange={handleHypertensiondChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond6" label="Гипертония 3 стадии" name="hypertensiond_group" value="6" checked={hypertensiond === '6'} onChange={handleHypertensiondChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypertensiond7" label="Не знаю" name="hypertensiond_group" value="7" checked={hypertensiond === '7'} onChange={handleHypertensiondChange}/></div>
 
     <h3 className="font-sans text-sm antialiased font-normal leading-normal text-gray-700 mb-2">Гипотония:</h3>
-    <RadioButton id="hypertension1" label="Нет" name="hypertension_group" value="1" checked={hypertensiond === '1'} onChange={handleHypertensiondChange}/>
-    <div className='mt-[-20px]'><RadioButton id="hypertension2" label="Да, ортостатическая" name="hypertension_group" value="2" checked={hypertensiond === '2'} onChange={handleHypertensiondChange}/></div>
-    <div className='mt-[-20px]'><RadioButton id="hypertension3" label="Да, постоянная" name="hypertension_group"  paragraph="(хроническая/идиопатическая)" value="3" checked={hypertensiond === '3'} onChange={handleHypertensiondChange}/></div>
-    <div className='mt-[-10px]'><RadioButton id="hypertension4" label="Не знаю" name="hypertension_group" value="4" checked={hypertensiond === '4'} onChange={handleHypertensiondChange}/></div>
+    <RadioButton id="hypotension1" label="Нет" name="hypotension_group" value="1" checked={hypotension === '1'} onChange={handleHypotensionChange}/>
+    <div className='mt-[-20px]'><RadioButton id="hypotension2" label="Да, ортостатическая" name="hypotension_group" value="2" checked={hypotension === '2'} onChange={handleHypotensionChange}/></div>
+    <div className='mt-[-20px]'><RadioButton id="hypotension3" label="Да, постоянная" name="hypotension_group"  paragraph="(хроническая/идиопатическая)" value="3" checked={hypotension === '3'} onChange={handleHypotensionChange}/></div>
+    <div className='mt-[-10px]'><RadioButton id="hypotension4" label="Не знаю" name="hypotension_group" value="4" checked={hypotension === '4'} onChange={handleHypotensionChange}/></div>
     <div className='ml-32'>
         <div className="ml-64 mb-[-25px] mt-[-235px] z-[-10]">
           <h3 className="font-sans text-sm antialiased font-normal leading-normal text-gray-700 mb-2">Изолированная систолическая артериальная гипертензия:</h3>
@@ -86,7 +90,7 @@ const Diseases = () => {
           <div className='mt-[-20px] mb-[-10px]'><RadioButton id="hyper2_y" label="Есть" name="hyper_group_y" value="2"/></div>
         </div>
       </div>
-      {(hypertensiond === '2' || hypertensiond === '3') && (
+      {(hypotension === '2' || hypotension === '3') && (hypertensiond === '2' || hypertensiond === '3' || hypertensiond === '4' || hypertensiond === '5' || hypertensiond === '6') && (
         <div className='flex space-x-4 mt-[-20px] mb-4'>
         <div className='inline-block'>
           <h3 className="font-sans text-sm antialiased font-normal leading-normal text-gray-700 mb-2 w-[260px]">Верхнее рабочее давление
